@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaulted</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cormorant Garamond', 'Georgia', serif;
+            background: #f8f8f8;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        header {
+            padding: 60px 0 40px;
+            border-bottom: 1px solid #2a2a2a;
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-size: 48px;
+            font-weight: 300;
+            letter-spacing: 12px;
+            text-align: center;
+            font-family: 'Didot', 'Cormorant Garamond', serif;
+        }
+
+        .hero {
+            padding: 100px 0;
+            text-align: center;
+            background: #ffffff;
+        }
+
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 400;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            letter-spacing: 0.5px;
+        }
+
+        .divider {
+            width: 60px;
+            height: 1px;
+            background: #4a4a4a;
+            margin: 80px auto;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 400;
+            letter-spacing: 4px;
+            text-align: center;
+            margin-bottom: 60px;
+            text-transform: uppercase;
+        }
+
+        .our-companies {
+            background: #ffffff;
+            padding: 40px 0;
+        }
+        .companies {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 120px;
+            padding: 40px 0 60px;
+            flex-wrap: wrap;
+        }
+
+        .company-logo {
+            transition: opacity 0.3s ease;
+        }
+
+        .company-logo:hover {
+            opacity: 0.7;
+        }
+
+        .company-logo img {
+            max-width: 200px;
+            height: auto;
+            filter: grayscale(100%);
+        }
+
+        .team {
+            padding: 80px 0;
+            background: #e8e8e8;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 60px;
+            margin-top: 60px;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-photo {
+            width: 250px;
+            height: 250px;
+            margin: 0 auto 30px;
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            border: 3px solid #ffffff;
+        }
+
+        .team-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+        }
+
+        .team-name {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .team-title {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        .team-bio {
+            font-size: 15px;
+            line-height: 1.8;
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+            font-family: 'Georgia', serif;
+        }
+
+        footer {
+            padding: 60px 0;
+            text-align: center;
+            border-top: 1px solid #2a2a2a;
+            margin-top: 0;
+            background: #ffffff;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+        }
+
+        footer p {
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 36px;
+                letter-spacing: 8px;
+            }
+
+            .hero h1 {
+                font-size: 24px;
+            }
+
+            .companies {
+                gap: 60px;
+            }
+
+            .company-logo img {
+                max-width: 150px;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">VAULTED</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Vaulted is a private equity firm that invests in and acquires consumer platforms</h1>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="our-companies">
+        <div class="container">
+            <h2 class="section-title">Our Companies</h2>
+            <div class="companies">
+                <a href="https://violetgrey.com" target="_blank" class="company-logo">
+                    <img src="https://violetgrey.com/cdn/shop/files/VG_Logo_Black_1_160x.png?v=1723756935" alt="Violet Grey">
+                </a>
+                <a href="https://www.thedetoxmarket.com" target="_blank" class="company-logo">
+                    <img src="https://www.thedetoxmarket.com/cdn/shop/files/TDM_LOGO_BLACK_150x.png?v=1719415668" alt="The Detox Market">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="container">
+            <h2 class="section-title">Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-photo">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250'%3E%3Crect fill='%23ddd' width='250' height='250'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999' font-size='14' font-family='Arial'%3ESherif Guirgis%3C/text%3E%3C/svg%3E" alt="Sherif Guirgis">
+                    </div>
+                    <h3 class="team-name">Sherif Guirgis</h3>
+                    <p class="team-title">Founder & CEO</p>
+                    <p class="team-bio">Sherif is the Founder & CEO of Vaulted and CEO of VGD HoldCo (parent company of VIOLET GREY and The Detox Market). Sherif co-led the carveout acquisition of VIOLET GREY from Farfetch. Sherif is a consumer investor and operator with over 17 years of private equity experience across Apollo Global Management, Lion Capital, and Main Street Advisors. He has deployed over $1 billion of equity capital across consumer and media companies and served as an advisor to some of the most prominent and influential talent in sports, music, and film. Representative investments and board roles include Authentic Brands Group, Sprouts Farmers Market, Hostess Brands, and PAIGE Denim. Sherif began his career in investment banking at Credit Suisse.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-photo">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250'%3E%3Crect fill='%23ddd' width='250' height='250'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999' font-size='14' font-family='Arial'%3EMihir Parthasarathy%3C/text%3E%3C/svg%3E" alt="Mihir Parthasarathy">
+                    </div>
+                    <h3 class="team-name">Mihir Parthasarathy</h3>
+                    <p class="team-title">Partner</p>
+                    <p class="team-bio">Mihir is a Partner at Vaulted and Head of Corporate Development at VGD HoldCo (parent company of VIOLET GREY and The Detox Market). Mihir co-led the carveout acquisition of VIOLET GREY from Farfetch. Mihir is an investor and operator with over ten years of private equity experience across H.I.G. Capital and Main Street Advisors. He has led and supported investments in consumer brands, entertainment, and healthcare sectors including Alpine F1 Team, GOAT, IMG Academy, Legendary Entertainment, StatusPRO, and St. Croix Hospice. Mihir began his career in investment banking at Credit Suisse. At VIOLET GREY, he led the successful carveout from Farfetch and oversees the company's administrative functions.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-photo">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250'%3E%3Crect fill='%23ddd' width='250' height='250'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999' font-size='14' font-family='Arial'%3ETalia Huber%3C/text%3E%3C/svg%3E" alt="Talia Huber">
+                    </div>
+                    <h3 class="team-name">Talia Huber</h3>
+                    <p class="team-title">Partner</p>
+                    <p class="team-bio">Talia is a Partner at Vaulted and works on corporate development and strategy at VGD HoldCo (parent company of VIOLET GREY and The Detox Market). Talia is an investor and operator with eight years of experience across investing, operating, and investment banking. She has invested through CIV and Main Street Advisors, with representative investments including Senra Systems, The Nuclear Company, Shinkei (Seremoni), Thorne HealthTech, NTWRK, and Gin & Juice. Talia spent two years in an operating role at Inspire Clean Energy, where she worked through the company's acquisition by Shell. She began her career in investment banking at Centerview Partners.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Vaulted. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
