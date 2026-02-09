@@ -70,33 +70,23 @@
 
         /* Mission Section */
         .mission {
-            position: relative;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            height: 70vh;
-            overflow: hidden;
-        }
+    position: relative;
+    height: 70vh;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+}
 
-        .mission-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: grayscale(0%);
-        }
+.mission-image {
+    display: none;
+}
 
-        .mission-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 80px;
-        }
-
+.mission-overlay {
+    position: relative;
+    background: transparent;
+}
         .mission-text {
             font-size: 32px;
             line-height: 1.6;
