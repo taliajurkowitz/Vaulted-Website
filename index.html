@@ -22,12 +22,12 @@
         .sticky-logo {
             position: fixed;
             top: 30px;
-            right: 40px;
+            left: 40px;
             z-index: 1000;
             cursor: pointer;
-            font-size: 32px;
+            font-size: 18px;
             font-weight: 300;
-            letter-spacing: 8px;
+            letter-spacing: 6px;
             color: #1a1a1a;
             font-family: 'Didot', 'Cormorant Garamond', serif;
             transition: opacity 0.3s ease;
@@ -81,7 +81,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            filter: grayscale(100%);
+            filter: grayscale(0%);
         }
 
         .mission-overlay {
@@ -124,7 +124,7 @@
         }
 
         .section-title {
-            font-size: 24px;
+            font-size: 14px;
             font-weight: 400;
             letter-spacing: 4px;
             text-align: center;
@@ -171,6 +171,15 @@
             margin-bottom: 40px;
         }
 
+        .company-logo a {
+            display: inline-block;
+            transition: opacity 0.3s ease;
+        }
+
+        .company-logo a:hover {
+            opacity: 0.7;
+        }
+
         .company-logo img {
             max-width: 280px;
             height: auto;
@@ -200,13 +209,12 @@
         }
 
         .team-photo {
-            width: 300px;
-            height: 300px;
+            width: 100%;
+            max-width: 400px;
+            height: 480px;
             margin: 0 auto 35px;
             overflow: hidden;
-            border-radius: 50%;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-            border: 5px solid #ffffff;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         }
 
         .team-photo img {
@@ -252,20 +260,21 @@
         .read-more-btn {
             display: inline-block;
             margin-top: 15px;
-            padding: 8px 20px;
-            background: #1a1a1a;
-            color: #ffffff;
+            padding: 0;
+            background: transparent;
+            color: #6a6a6a;
             border: none;
+            border-bottom: 1px solid transparent;
             cursor: pointer;
-            font-size: 12px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 1px;
             font-family: 'Cormorant Garamond', 'Georgia', serif;
-            transition: background 0.3s ease;
+            transition: all 0.3s ease;
         }
 
         .read-more-btn:hover {
-            background: #4a4a4a;
+            color: #1a1a1a;
+            border-bottom: 1px solid #1a1a1a;
         }
 
         .read-more-btn.hidden {
@@ -347,9 +356,10 @@
             }
 
             .sticky-logo {
-                font-size: 24px;
+                font-size: 16px;
                 top: 20px;
-                right: 30px;
+                left: 30px;
+                letter-spacing: 4px;
             }
         }
 
@@ -388,8 +398,9 @@
             }
 
             .sticky-logo {
-                font-size: 20px;
-                letter-spacing: 6px;
+                font-size: 14px;
+                letter-spacing: 3px;
+                left: 20px;
             }
         }
     </style>
@@ -431,7 +442,9 @@
                 </div>
                 <div class="company-content">
                     <div class="company-logo">
-                        <img src="https://i.imgur.com/xm6O0eU.jpeg" alt="Violet Grey">
+                        <a href="https://www.violetgrey.com/" target="_blank">
+                            <img src="https://i.imgur.com/xm6O0eU.jpeg" alt="Violet Grey">
+                        </a>
                     </div>
                     <p class="company-description">
                         Where beauty insiders shop. VIOLET GREY is the luxury platform that marries editorial authority with commerce, curating only the most sought-after skincare, makeup, and fragrance. Every product selection is informed by expert taste, transforming discovery into an elevated experience for those who demand both efficacy and elegance.
@@ -446,7 +459,9 @@
                 </div>
                 <div class="company-content">
                     <div class="company-logo">
-                        <img src="https://i.imgur.com/Cv9T168.png" alt="The Detox Market">
+                        <a href="https://www.thedetoxmarket.com/" target="_blank">
+                            <img src="https://i.imgur.com/Cv9T168.png" alt="The Detox Market">
+                        </a>
                     </div>
                     <p class="company-description">
                         Clean beauty, elevated. The Detox Market is the discerning destination for non-toxic skincare, makeup, and wellness. Rigorous ingredient standards meet impeccable taste in a carefully curated edit that proves conscious consumption and uncompromising quality are not mutually exclusive.
